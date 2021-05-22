@@ -1,4 +1,13 @@
-const plugins = []
+const plugins = [
+  [
+    "@babel/plugin-transform-runtime",
+    {
+      "corejs": false,
+      "regenerator": false
+    }
+  ]
+
+]
 
 if (process.env.UNI_OPT_TREESHAKINGNG) {
   plugins.push(require('@dcloudio/vue-cli-plugin-uni-optimize/packages/babel-plugin-uni-api/index.js'))
@@ -25,7 +34,7 @@ if (
     plugins.push([
       require('@dcloudio/vue-cli-plugin-hbuilderx/packages/babel-plugin-console'),
       {
-        file (file) {
+        file(file) {
           file = normalizePath(file)
           if (file.indexOf(input) === 0) {
             return path.relative(input, file)
@@ -34,7 +43,7 @@ if (
         }
       }
     ])
-  } catch (e) {}
+  } catch (e) { }
 }
 
 process.UNI_LIBRARIES = process.UNI_LIBRARIES || ['@dcloudio/uni-ui']
@@ -56,6 +65,14 @@ module.exports = {
       {
         modules: 'commonjs',
         useBuiltIns: process.env.UNI_PLATFORM === 'h5' ? 'usage' : 'entry'
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 5%",
+        "useBuiltIns": "usage",
+        "corejs": 3
       }
     ]
   ],

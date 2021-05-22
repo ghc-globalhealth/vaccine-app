@@ -1,0 +1,27 @@
+{
+  "route": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "register",
+    "resetPasswords": "Forgot password?",
+    "information": "Information",
+    "home": "Home",
+    "searchBloggers": "Influencers",
+    "bloggerDetail": "Influencer's details",
+    "notFound": "Error 404 Not Found",
+    "notToken": "Sorry, you are not allowed to access this page",
+    "campaignsSearch": "Campaigns",
+    "collaboration": "Cooperations",
+    "collaborationList": "Dashboard",
+    "collaborationDetail": "Campaign's detail",
+    "myAccount": "Account info",
+    "mySystem": "Setting",
+    "mySocail": "Social",
+    "wallet": "Wallet",
+    "campaigns": "Campaigns",
+    "campaignsDetail": "Campaign's detail",
+    "systemMessage": "System",
+    "campaignMessage": "Campaings",
+    "transactionMessage": "Transaction"
+  }
+}

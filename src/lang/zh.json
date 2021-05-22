@@ -1,0 +1,27 @@
+{
+  "route": {
+    "login": "登录",
+    "logout": "退出登录",
+    "register": "注册",
+    "resetPasswords": "忘记密码",
+    "information": "信息采集",
+    "home": "首页",
+    "searchBloggers": "红人库",
+    "bloggerDetail": "红人详情",
+    "notFound": "404页面",
+    "notToken": "没有权限",
+    "campaignsSearch": "活动",
+    "collaboration": "我的合作",
+    "collaborationList": "合作看板",
+    "collaborationDetail": "合作详情",
+    "myAccount": "账号信息",
+    "mySystem": "系统设置",
+    "mySocail": "平台管理",
+    "wallet": "钱包管理",
+    "campaigns": "发现活动",
+    "campaignsDetail": "活动详情",
+    "systemMessage": "系统消息",
+    "campaignMessage": "活动消息",
+    "transactionMessage": "交易消息"
+  }
+}
